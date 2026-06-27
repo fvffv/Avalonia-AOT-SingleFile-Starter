@@ -1,0 +1,27 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:semi="https://irihi.tech/semi"
+             x:Class="avaloniaAotTemplate.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                  <!-- 亮色主题 -->
+                <ResourceDictionary x:Key="Light">
+                    <Color x:Key="Background">#F9FAFC</Color>
+                </ResourceDictionary>
+                <!-- 暗色主题 -->
+                <ResourceDictionary x:Key="Dark">
+                    <Color x:Key="Background">#26409EFF</Color>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+    <Application.Styles>
+        <semi:SemiTheme Locale="zh-CN" />
+        <semi:UrsaSemiTheme Locale="zh-CN"/>
+        <FluentTheme />
+    </Application.Styles>
+</Application>
