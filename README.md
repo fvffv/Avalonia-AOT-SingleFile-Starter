@@ -109,22 +109,6 @@ macOS arm64：
 dotnet publish avaloniaAotTemplate.csproj -c Release -r osx-arm64 --self-contained true /p:PublishAot=true /p:PublishSingleFile=true
 ```
 
-### 作为项目模板安装
-
-如果你把本项目打包成标准 .NET 模板包，可以使用：
-
-```bash
-dotnet new install AvaloniaAot.SingleFile.Starter.Template.1.0.0.nupkg
-```
-
-创建新项目：
-
-```bash
-dotnet new avalonia-aot-singlefile -n MyAotApp
-```
-
-创建时会自动把解决方案名、项目名、命名空间、XAML `x:Class` 和 Rider 配置中的路径替换为你的项目名。
-
 ### 注意事项
 
 - 编译 / 发布对应平台的程序建议在对应平台上进行：Windows 在 Windows 环境发布，Linux 在 Linux 环境发布，macOS 在 macOS 环境发布。
@@ -238,21 +222,6 @@ macOS arm64:
 dotnet publish avaloniaAotTemplate.csproj -c Release -r osx-arm64 --self-contained true /p:PublishAot=true /p:PublishSingleFile=true
 ```
 
-### Install as a Project Template
-
-If this project is packed as a standard .NET template package, install it with:
-
-```bash
-dotnet new install AvaloniaAot.SingleFile.Starter.Template.1.0.0.nupkg
-```
-
-Create a new project:
-
-```bash
-dotnet new avalonia-aot-singlefile -n MyAotApp
-```
-
-The solution name, project name, namespaces, XAML `x:Class`, and Rider configuration paths are replaced with your project name automatically.
 
 ### Notes
 
